@@ -93,7 +93,7 @@
         </interface>
     </hal>
     <vendor-ndk>
-        <version>30</version>
+        <version>32</version>
     </vendor-ndk>
     <system-sdk>
         <version>28</version>

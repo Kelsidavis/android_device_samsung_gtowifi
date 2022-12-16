@@ -93,7 +93,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/android.hardware.wifi@1.0-service.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/engmode_manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/hyper-default-sec.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/lights-default-sec.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_android.hardware.drm@1.3-service.clearkey.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest_android.hardware.drm@1.3-service.widevine.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/sec_c2_manifest_default.xml
@@ -182,7 +181,7 @@ BOARD_ROOT_EXTRA_FOLDERS := efs
 VENDOR_SECURITY_PATCH := 2022-07-01
 
 # SELinux
-#include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 #BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 #PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
